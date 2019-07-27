@@ -1,0 +1,20 @@
+{
+  "name": "yahoo_news",
+  "version": "1.0.0",
+  "description": "",
+  "main": "request.js",
+  "dependencies": {
+    "async": "^2.6.1",
+    "config": "^2.0.1"
+  },
+  "devDependencies": {
+    "cheerio": "^1.0.0-rc.3",
+    "ncmb": "^3.0.0",
+    "request": "^2.88.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "reoharada",
+  "license": "ISC"
+}
