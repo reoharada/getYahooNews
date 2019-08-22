@@ -27,12 +27,17 @@ var saveData = function(data, handler) {
 };
 
 var getDataFromTitle = function(obj, handler) {
+    console.log(obj.title);
     News.equalTo("title", obj.title)
     .fetchAll()
     .then(function(res){
         if(res.length == 0) {
+            console.log("データがない");
             handler(obj, true);
+            return;
         }
+        console.log("すでにデータある");
+        handler(obj, false);
     })
     .catch(function(error){
         handler(obj, false);
